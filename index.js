@@ -11,7 +11,10 @@ let template = [{
     sublabel: 'sublabel'
   }, {
     role: 'redo',
-    icon: 'seal.png'
+    icon: 'seal.png',
+    click: function () {
+      console.log('redo');
+    }
   }, {
     role: 'cut'
   }, {
