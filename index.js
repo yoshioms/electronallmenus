@@ -18,9 +18,26 @@ let template = [{
   }, {
     role: 'paste'
   }, {
+    label: 'やり直し',
+    accelerator: 'Shift+CmdOrCtrl+Z',
+    role: 'redo',
+    id: 'redoitem'
+  }, {
+    type: 'separator'
+  }, {
+    label: '切り取り',
+    accelerator: 'CmdOrCtrl+X',
+    role: 'cut'
+  }, {
+    label: 'コピー',
+    accelerator: 'CmdOrCtrl+C',
+    role: 'copy',
+    position: 'before=redoitem'
+  }, {
     role: 'pasteandmatchstyle'
   }, {
-    role: 'selectall'
+    role: 'selectall',
+    id: 'abc'
   }, {
     role: 'delete'
   }, {
@@ -28,17 +45,20 @@ let template = [{
   }, {
     role: 'close'
   }, {
-    role: 'quit'
+    role: 'quit',
+    position: 'after=abc'
   }, {
     role: 'reload'
   }, {
     role: 'toggledevtools'
   }, {
-    role: 'togglefullscreen'
+    role: 'togglefullscreen',
+    visible: false
   }, {
     role: 'resetzoom'
   }, {
-    role: 'zoomin'
+    role: 'zoomin',
+    enabled: false
   }, {
     role: 'zoomout'
   }, {
