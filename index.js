@@ -10,7 +10,8 @@ let template = [{
     role: 'undo',
     sublabel: 'sublabel'
   }, {
-    role: 'redo'
+    role: 'redo',
+    icon: 'seal.png'
   }, {
     role: 'cut'
   }, {
