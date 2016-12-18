@@ -27,28 +27,32 @@ let template = [{
   }, {
     label: '切り取り',
     accelerator: 'CmdOrCtrl+X',
-    role: 'cut'
+    role: 'cut',
+    position: 'endof=numbers'
   }, {
     label: 'コピー',
     accelerator: 'CmdOrCtrl+C',
     role: 'copy',
-    position: 'before=redoitem'
+    position: 'before=redoitema'
   }, {
     role: 'pasteandmatchstyle'
   }, {
     role: 'selectall',
     id: 'abc'
   }, {
-    role: 'delete'
+    role: 'delete',
+    id: '1'
   }, {
     role: 'minimize'
   }, {
-    role: 'close'
+    role: 'close',
+    id: '2'
   }, {
     role: 'quit',
     position: 'after=abc'
   }, {
-    role: 'reload'
+    role: 'reload',
+    id: '1'
   }, {
     role: 'toggledevtools'
   }, {
