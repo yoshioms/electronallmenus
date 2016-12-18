@@ -38,7 +38,8 @@ let template = [{
     role: 'pasteandmatchstyle'
   }, {
     role: 'selectall',
-    id: 'abc'
+    id: 'abc',
+    position: 'endof=numbers'
   }, {
     role: 'delete',
     id: '1'
@@ -52,7 +53,8 @@ let template = [{
     position: 'after=abc'
   }, {
     role: 'reload',
-    id: '1'
+    id: '1',
+    position: 'endof=numbers'
   }, {
     role: 'toggledevtools'
   }, {
