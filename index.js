@@ -7,7 +7,8 @@ const app = electron.app
 let template = [{
   label: '編集',
   submenu: [{
-    role: 'undo'
+    role: 'undo',
+    sublabel: 'sublabel'
   }, {
     role: 'redo'
   }, {
@@ -40,6 +41,24 @@ let template = [{
     role: 'zoomin'
   }, {
     role: 'zoomout'
+  }, {
+    label: 'normal',
+    type: 'normal'
+  }, {
+    label: 'separator',
+    type: 'separator'
+  }, {
+    label: 'checkbox1',
+    type: 'checkbox'
+  }, {
+    label: 'checkbox2',
+    type: 'checkbox'
+  }, {
+    label: 'radio',
+    type: 'radio'
+  }, {
+    label: 'radio1',
+    type: 'radio'
   }]
 }]
 
